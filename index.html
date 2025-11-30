@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- Mandatory for mobile responsiveness -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Page Title -->
+    <title>Kokua Apparel - Premium T-Shirts</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Setting 'Inter' as the default font */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            /* Using a soft off-black background for general areas */
+            background-color: #f7fafc; 
+        }
+        /* Defining Custom Accent Color (Amber/Gold) */
+        .text-kokua-gold { color: #D97706; } /* Tailwind Amber 600 */
+        .bg-kokua-gold { background-color: #D97706; }
+        .hover\:bg-kokua-gold-dark:hover { background-color: #B45309; } /* Tailwind Amber 700 */
+        .border-kokua-gold { border-color: #D97706; }
+
+        /* Custom style to include the logo as a background image for the hero placeholder */
+        .hero-logo-placeholder {
+            /* Using a placeholder URL that matches the uploaded logo's aesthetic (black background, gold texture) */
+            background-image: url('https://placehold.co/800x600/000000/D97706?text=KOKUA+APPAREL');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 400px;
+        }
+    </style>
+</head>
+<body class="antialiased text-gray-800">
+
+    <!-- Header / Navigation Bar -->
+    <header class="sticky top-0 z-10 bg-white shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo/Brand Name Text (Now styled in Gold) -->
+                <a href="https://kokuaapparel.com" class="text-2xl font-extrabold text-amber-600 tracking-wider">
+                    KOKUA APPAREL
+                </a>
+
+                <!-- Navigation Links -->
+                <nav class="hidden md:flex space-x-8 text-sm font-medium">
+                    <a href="#products" class="text-gray-600 hover:text-amber-600 transition duration-300">Shop Tees</a>
+                    <a href="#about" class="text-gray-600 hover:text-amber-600 transition duration-300">Our Story</a>
+                    <a href="#contact" class="text-gray-600 hover:text-amber-600 transition duration-300">Contact & Support</a>
+                </nav>
+
+                <!-- Cart/Account Icon (Simplified for this file) -->
+                <div class="flex items-center space-x-4">
+                    <button class="p-2 rounded-full hover:bg-gray-100 transition duration-300">
+                        <svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path></svg>
+                    </button>
+                    <!-- Mobile Menu Button -->
+                    <button class="md:hidden p-2 rounded-full hover:bg-gray-100 transition duration-300">
+                        <svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section - Dark Theme -->
+        <section class="bg-gray-900 py-16 sm:py-24">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 gap-12 items-center">
+                <!-- Text Content -->
+                <div class="text-center md:text-left">
+                    <h1 class="text-4xl sm:text-6xl font-extrabold leading-tight text-white">
+                        Tees Crafted with <span class="text-amber-500">Aloha</span> and Comfort.
+                    </h1>
+                    <p class="mt-4 text-lg text-gray-300 max-w-xl mx-auto md:mx-0">
+                        We specialize in unique, high-quality t-shirts, focusing on comfort, durability, and bold design. Every shirt tells a story.
+                    </p>
+                    <div class="mt-8 flex justify-center md:justify-start space-x-4">
+                        <a href="#products" class="px-8 py-3 bg-amber-500 text-gray-900 font-semibold text-lg rounded-full shadow-lg hover:bg-amber-600 transition duration-300 transform hover:scale-105">
+                            Shop New Arrivals
+                        </a>
+                        <a href="#about" class="px-8 py-3 text-amber-500 border border-amber-500 font-semibold text-lg rounded-full hover:bg-gray-800 transition duration-300">
+                            Our Story
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Hero Image Placeholder - Uses CSS class for a background that mimics the logo's look -->
+                <div class="flex justify-center md:justify-end">
+                    <div class="w-full max-w-md rounded-3xl shadow-2xl transition duration-500 hover:shadow-amber-300/50 hero-logo-placeholder" role="img" aria-label="Kokua Apparel Logo Mockup">
+                         <!-- Placeholder text for accessibility/SEO, styled to be invisible but present -->
+                         <span class="sr-only">Kokua Apparel Logo: Faith, Family, Freedom, and wave design.</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Products Section -->
+        <section id="products" class="py-16 sm:py-24">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl sm:text-4xl font-bold text-center text-gray-900 mb-12">
+                    Our Featured Tees
+                </h2>
+
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-6 lg:gap-8">
+                    <!-- Product Card 1: Button color updated to Gold accent -->
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden transition duration-300 hover:shadow-xl transform hover:-translate-y-1">
+                        <div class="relative">
+                            <img
+                                class="w-full h-48 object-cover sm:h-64"
+                                src="https://placehold.co/400x400/FDBA74/1C1C1C?text=Minimalist+Design"
+                                alt="Product: Minimalist Design Tee"
+                                onerror="this.onerror=null;this.src='https://placehold.co/400x400/FDBA74/1C1C1C?text=Classic+Tee'"
+                            >
+                            <span class="absolute top-3 left-3 bg-amber-600 text-white text-xs font-semibold px-3 py-1 rounded-full">New</span>
+                        </div>
+                        <div class="p-4 text-center">
+                            <h3 class="text-lg font-medium text-gray-900 truncate">The Minimalist Tee</h3>
+                            <p class="text-sm text-gray-500 mt-1">Lightweight & Breathable</p>
+                            <p class="text-xl font-bold text-amber-600 mt-2">$24.99</p>
+                            <button class="mt-3 w-full py-2 bg-amber-50 text-amber-600 rounded-lg text-sm font-semibold hover:bg-amber-100 transition duration-300">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Product Card 2: Button color updated to Gold accent -->
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden transition duration-300 hover:shadow-xl transform hover:-translate-y-1">
+                        <div class="relative">
+                            <img
+                                class="w-full h-48 object-cover sm:h-64"
+                                src="https://placehold.co/400x400/93C5FD/1C1C1C?text=Geometric+Print"
+                                alt="Product: Geometric Print Tee"
+                                onerror="this.onerror=null;this.src='https://placehold.co/400x400/93C5FD/1C1C1C?text=Graphic+Tee'"
+                            >
+                        </div>
+                        <div class="p-4 text-center">
+                            <h3 class="text-lg font-medium text-gray-900 truncate">The Geometric Print</h3>
+                            <p class="text-sm text-gray-500 mt-1">Modern & Stylish</p>
+                            <p class="text-xl font-bold text-amber-600 mt-2">$29.99</p>
+                            <button class="mt-3 w-full py-2 bg-amber-50 text-amber-600 rounded-lg text-sm font-semibold hover:bg-amber-100 transition duration-300">
+                                View Details
+                            </button>
+                            <!-- You would link this button to a product page -->
+                        </div>
+                    </div>
+
+                    <!-- Product Card 3: Button color updated to Gold accent -->
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden transition duration-300 hover:shadow-xl transform hover:-translate-y-1">
+                        <div class="relative">
+                            <img
+                                class="w-full h-48 object-cover sm:h-64"
+                                src="https://placehold.co/400x400/EC4899/ffffff?text=Sustainable+Cotton"
+                                alt="Product: Sustainable Cotton Tee"
+                                onerror="this.onerror=null;this.src='https://placehold.co/400x400/EC4899/ffffff?text=Pink+Tee'"
+                            >
+                        </div>
+                        <div class="p-4 text-center">
+                            <h3 class="text-lg font-medium text-gray-900 truncate">The Sustainable Cotton</h3>
+                            <p class="text-sm text-gray-500 mt-1">Eco-Friendly Dye</p>
+                            <p class="text-xl font-bold text-amber-600 mt-2">$27.99</p>
+                            <button class="mt-3 w-full py-2 bg-amber-50 text-amber-600 rounded-lg text-sm font-semibold hover:bg-amber-100 transition duration-300">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Product Card 4: Button color updated to Gold accent -->
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden transition duration-300 hover:shadow-xl transform hover:-translate-y-1">
+                        <div class="relative">
+                            <img
+                                class="w-full h-48 object-cover sm:h-64"
+                                src="https://placehold.co/400x400/34D399/1C1C1C?text=Staff+Pick+Design"
+                                alt="Product: Staff Pick Tee"
+                                onerror="this.onerror=null;this.src='https://placehold.co/400x400/34D399/1C1C1C?text=Green+Tee'"
+                            >
+                            <span class="absolute top-3 right-3 bg-red-500 text-white text-xs font-semibold px-3 py-1 rounded-full">Sale</span>
+                        </div>
+                        <div class="p-4 text-center">
+                            <h3 class="text-lg font-medium text-gray-900 truncate">The Staff Pick</h3>
+                            <p class="text-sm text-gray-500 mt-1">Limited Stock</p>
+                            <p class="text-xl font-bold text-amber-600 mt-2">$19.99</p>
+                            <button class="mt-3 w-full py-2 bg-amber-50 text-amber-600 rounded-lg text-sm font-semibold hover:bg-amber-100 transition duration-300">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-12 text-center">
+                    <a href="https://kokuaapparel.com/shop" class="inline-block px-10 py-3 border border-amber-600 text-amber-600 font-semibold rounded-full hover:bg-amber-600 hover:text-white transition duration-300 shadow-md">
+                        View All Collections
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Value Proposition / About Us Section -->
+        <section id="about" class="bg-white py-16 sm:py-24">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="lg:text-center">
+                    <!-- Accent color updated -->
+                    <h2 class="text-base text-amber-600 font-semibold tracking-wide uppercase">Our Commitment</h2>
+                    <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+                        Quality, Sustainability, and Style
+                    </p>
+                </div>
+                <div class="mt-10">
+                    <dl class="space-y-10 md:space-y-0 md:grid md:grid-cols-3 md:gap-x-8 md:gap-y-10">
+                        <!-- Feature 1: Icon background updated -->
+                        <div class="flex flex-col items-center text-center p-4">
+                            <div class="flex-shrink-0">
+                                <div class="flex items-center justify-center h-12 w-12 rounded-md bg-amber-600 text-white">
+                                    <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.204A9.954 9.954 0 0012 3C6.488 3 2 7.488 2 13s4.488 10 10 10 10-4.488 10-10c0-1.748-.599-3.37-1.632-4.694l-2.03-2.03z"></path></svg>
+                                </div>
+                            </div>
+                            <div class="mt-4">
+                                <dt class="text-lg leading-6 font-medium text-gray-900">
+                                    1. Premium Material
+                                </dt>
+                                <dd class="mt-2 text-base text-gray-500">
+                                    We use ethically sourced materials and advanced printing techniques to ensure a soft feel and zero cracking.
+                                </dd>
+                            </div>
+                        </div>
+
+                        <!-- Feature 2: Icon background updated -->
+                        <div class="flex flex-col items-center text-center p-4">
+                            <div class="flex-shrink-0">
+                                <div class="flex items-center justify-center h-12 w-12 rounded-md bg-amber-600 text-white">
+                                    <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                </div>
+                            </div>
+                            <div class="mt-4">
+                                <dt class="text-lg leading-6 font-medium text-gray-900">
+                                    2. Fast, Reliable Shipping
+                                </dt>
+                                <dd class="mt-2 text-base text-gray-500">
+                                    All orders are processed and shipped within 24 hours, with tracking provided immediately upon dispatch.
+                                </dd>
+                            </div>
+                        </div>
+
+                        <!-- Feature 3: Icon background updated -->
+                        <div class="flex flex-col items-center text-center p-4">
+                            <div class="flex-shrink-0">
+                                <div class="flex items-center justify-center h-12 w-12 rounded-md bg-amber-600 text-white">
+                                    <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354l.707.707m1.686-1.686l.707.707M19 14l-.707.707m-1.686-1.686l.707.707M3 14l.707.707m-1.686-1.686l.707.707M16 16l-3.5-3.5 1-1-3 3-1-1-3 3M4 14l2 2 1-1-3 3M18 14l-2 2 1-1 3 3M12 21V3"></path></svg>
+                                </div>
+                            </div>
+                            <div class="mt-4">
+                                <dt class="text-lg leading-6 font-medium text-gray-900">
+                                    3. 100% Satisfaction Guarantee
+                                </dt>
+                                <dd class="mt-2 text-base text-gray-500">
+                                    If you're not completely satisfied, we offer hassle-free returns and exchanges within 30 days.
+                                </dd>
+                            </div>
+                        </div>
+                    </dl>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section - Background updated -->
+        <section class="bg-gray-800">
+            <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 lg:flex lg:items-center lg:justify-between">
+                <h2 class="text-3xl font-extrabold tracking-tight text-white sm:text-4xl">
+                    <span class="block">Ready to upgrade your wardrobe?</span>
+                    <!-- [EDIT 9: CTA Subtext] Update this offer -->
+                    <span class="block text-amber-300">Sign up for our newsletter below and get 15% off your first order!</span>
+                </h2>
+                <div class="mt-8 flex lg:mt-0 lg:flex-shrink-0">
+                    <div class="inline-flex rounded-md shadow">
+                        <!-- Button color updated -->
+                        <a href="#contact" class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-gray-900 bg-amber-500 hover:bg-amber-400 transition duration-300">
+                            Get My Discount
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer id="contact" class="bg-gray-900">
+        <div class="max-w-7xl mx-auto py-12 px-4 overflow-hidden sm:px-6 lg:px-8">
+            <div class="text-center mb-8">
+                <h3 class="text-xl font-bold text-white mb-2">Connect with Kokua Apparel</h3>
+                <p class="text-sm text-gray-400 mb-6">Email us anytime at <a href="mailto:support@kokuaapparel.com" class="text-amber-400 hover:text-amber-300 underline">support@kokuaapparel.com</a></p>
+
+                <!-- Simple Newsletter Signup Placeholder -->
+                <form class="flex justify-center max-w-sm mx-auto">
+                    <input type="email" placeholder="Enter your email" class="w-full px-4 py-2 rounded-l-lg focus:outline-none focus:ring-2 focus:ring-amber-500" required>
+                    <!-- Button color updated -->
+                    <button type="submit" class="bg-amber-600 text-white px-4 py-2 rounded-r-lg hover:bg-amber-700 transition duration-300">
+                        Subscribe
+                    </button>
+                </form>
+            </div>
+
+            <nav class="-mx-5 -my-2 flex flex-wrap justify-center" aria-label="Footer">
+                <!-- Links now point to the assumed domain structure -->
+                <div class="px-5 py-2">
+                    <a href="https://kokuaapparel.com/shop" class="text-base text-gray-300 hover:text-amber-500">Shop Now</a>
+                </div>
+                <div class="px-5 py-2">
+                    <a href="https://kokuaapparel.com/about" class="text-base text-gray-300 hover:text-amber-500">Our Story</a>
+                </div>
+                <div class="px-5 py-2">
+                    <a href="https://kokuaapparel.com/shipping" class="text-base text-gray-300 hover:text-amber-500">Shipping Policy</a>
+                </div>
+                <div class="px-5 py-2">
+                    <a href="https://kokuaapparel.com/faq" class="text-base text-gray-300 hover:text-amber-500">FAQ</a>
+                </div>
+            </nav>
+            <div class="mt-8 flex justify-center space-x-6">
+                <!-- Social Icons hover color updated -->
+                <a href="https://facebook.com/kokuaapparel" class="text-gray-400 hover:text-amber-500">
+                    <span class="sr-only">Facebook</span>
+                    <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.77l-.44 2.89h-2.33v6.987C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" /></svg>
+                </a>
+                <a href="https://instagram.com/kokuaapparel" class="text-gray-400 hover:text-amber-500">
+                    <span class="sr-only">Instagram</span>
+                    <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12.315 2c2.43 0 2.715.01 3.665.054 1.12.06 1.749.23 2.227.465.485.234.84.585 1.18.916.345.335.69.69.92 1.18.235.477.405 1.106.464 2.227.043.95.054 1.234.054 3.665 0 2.43-.01 2.715-.054 3.665-.06 1.12-.23 1.749-.465 2.227-.234.485-.585.84-.916 1.18-.335.345-.69.69-1.18.92-.477.235-1.106.405-2.227-.464-.95-.043-1.234-.054-3.665-.054-2.43 0-2.715-.01-3.665-.054-1.12-.06-1.749-.23-2.227-.465-.485-.234-.84-.585-1.18-.916-.345-.335-.69.69-1.18.92-.477.235-1.106.405-2.227-.464-.95-.043-1.234-.054-3.665-.054zm0 3.827a5.5 5.5 0 100 11 5.5 5.5 0 000-11zm0 9a3.5 3.5 0 110-7 3.5 3.5 0 010 7zM18.25 5a1.25 1.25 0 100 2.5 1.25 1.25 0 000-2.5z" clip-rule="evenodd" /></svg>
+                </a>
+            </div>
+            <!-- Footer Copyright -->
+            <p class="mt-8 text-center text-base text-gray-400">
+                &copy; <span id="current-year"></span> Kokua Apparel. All rights reserved. | <a href="https://kokuaapparel.com" class="hover:text-amber-500">kokuaapparel.com</a>
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        // Set the current year in the footer dynamically
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
