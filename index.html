@@ -42,13 +42,9 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-16">
                 <!-- Logo/Brand Name Text (Now styled in Gold) -->
-                <a href="https://kokuaapparel.com" class="flex items-center space-x-2">
-  <img src="https://cdn.shopify.com/s/files/1/0700/7210/7161/files/Gold_Logo_transparent.png?v=1764556211"
-       alt="Kokua Apparel Logo"
-       class="h-10 sm:h-12 object-contain" />
-  <span class="sr-only">Kokua Apparel</span>
-</a>
-
+                <a href="https://kokuaapparel.com" class="text-2xl font-extrabold text-amber-600 tracking-wider">
+                    KOKUA APPAREL
+                </a>
 
                 <!-- Navigation Links -->
                 <nav class="hidden md:flex space-x-8 text-sm font-medium">
@@ -93,17 +89,18 @@
                     </div>
                 </div>
 
-                <!-- Hero Image Placeholder - Uses CSS class for a background that mimics the logo's look -->
-                <div class="flex justify-center md:justify-end">
-                    <div class="w-full max-w-md rounded-3xl shadow-2xl transition duration-500 hover:shadow-amber-300/50 hero-logo-placeholder" role="img" aria-label="Kokua Apparel Logo Mockup">
-                         <!-- Placeholder text for accessibility/SEO, styled to be invisible but present -->
-                         <span class="sr-only">Kokua Apparel Logo: Faith, Family, Freedom, and wave design.</span>
-                    </div>
-                </div>
-            </div>
+                <!-- Hero Image Section with Real Logo -->
+<div class="flex justify-center md:justify-end">
+  <div class="w-full max-w-md rounded-3xl shadow-2xl transition duration-500 hover:shadow-amber-300/50">
+    <img src="https://cdn.shopify.com/s/files/1/0700/7210/7161/files/Gold_Logo_transparent.png?v=1764556211"
+         alt="Kokua Apparel Logo: Faith, Family, Freedom, and wave design."
+         class="w-full h-auto object-contain rounded-3xl" />
+  </div>
+</div>
+
         </section>
 
-       <section id="products" class="py-16 sm:py-24">
+<section id="products" class="py-16 sm:py-24">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <h2 class="text-3xl sm:text-4xl font-bold text-center text-gray-900 mb-12">
       Our Featured Tees
@@ -194,6 +191,7 @@
     </div>
   </div>
 </section>
+
 
         <!-- Value Proposition / About Us Section -->
         <section id="about" class="bg-white py-16 sm:py-24">
@@ -338,5 +336,4 @@
         document.getElementById('current-year').textContent = new Date().getFullYear();
     </script>
 </body>
-
 </html>
